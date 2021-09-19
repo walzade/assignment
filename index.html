@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<title>employee sales</title>
+</head>
+<body>
+	<h2 class="text-center">Employee salary&sales</h2>
+	<div class="container"><br>
+		
+		<div class="col-lg-6 m-auto d-block">
+			
+			<form action="connection.php" method="post" onsubmit="return validation()" class="bg-light" name="ProcessInfo">
+				
+				<div class="form-group">
+					<label for="Firstname" class="font-weight-bold"> Firstname: </label>
+					<input type="text" name="FirstName" class="form-control" id="Firstname" autocomplete="off" required>
+					<span id="Fname" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Middlename: </label>
+					<input type="text" name="MiddleName" class="form-control" id="Middlename" autocomplete="off" required>
+					<span id="mname" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Lastname </label>
+					<input type="text" name="LastName" class="form-control" id="Lastname" autocomplete="off" required>
+					<span id="lname" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group col-lg-6">
+					<label class="font-weight-bold"> Date </label>
+					<input type="date" name="date" class="form-control" id="date"  autocomplete="off" onsubmit="validateDOB()" required>
+					<span id="mydate" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Male: </label>
+					<input type="radio" name="gender" class="form-control" id="male" autocomplete="off" required>
+					<span id="Male" class="text-danger font-weight-bold"> </span>
+				</div>
+                <div class="form-group">
+					<label class="font-weight-bold"> Female: </label>
+					<input type="radio" name="gender" class="form-control" id="female" autocomplete="off" required>
+					<span id="Female" class="text-danger font-weight-bold"> </span>
+				</div>
+
+
+				<input type="submit" name="submit" value="submit" class="btn btn-success" id="txtDOB" 	autocomplete="off">
+
+
+			</form><br><br>
+
+
+		</div>
+	</div>
+
+</body>
+<script src="form.js"></script>
+</html>
+
+
+
+
+
+
+
